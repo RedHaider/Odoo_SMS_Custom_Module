@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <menuitem id="menu_school_base_root"
+                  name="School Management System"
+                  sequence="0"
+        />
+        <!-- student menu -->
+        <!-- parent menu -->
+        <!-- teacher menu -->
+        <menuitem id="menu_configuration_master"
+                  name="Configuration"
+                  parent="menu_school_base_root"
+                  sequence="4"
+        />
+        <!-- section under Configuration -->
+        <!-- room under Configuration -->
+        <!-- subject under Configuration -->
+        <!-- class under Configuration -->
+</odoo>

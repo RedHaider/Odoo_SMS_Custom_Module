@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!-- Subject Form View -->
+        <record id="view_school_subject_form" model="ir.ui.view">
+            <field name="name">school.subject.form</field>
+            <field name="model">school.subject</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="subject_id"/>
+                            <field name="description"/>
+                            <field name="class_id" options="{'no_create': True, 'no_open': True}" widget="many2one"/>
+                            <field name="book_id" options="{'no_create': True, 'no_open': True}" widget="many2one"/>
+                            <field name="subject_type"/>
+                            <field name="active"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- Subject Tree View -->
+        <record id="view_school_subject_tree" model="ir.ui.view">
+            <field name="name">school.subject.tree</field>
+            <field name="model">school.subject</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="subject_id"/>
+                    <field name="class_id"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="action_school_subject" model="ir.actions.act_window">
+            <field name="name">Room</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">school.subject</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smile_face">
+                    Create your test!
+                </p>
+            </field>
+        </record>
+
+<menuitem id="menu_subject_main"
+          name="Subject"
+          action="action_school_subject"
+          parent="menu_configuration_master"
+          sequence="2"
+/>
+
+
+</odoo>
