@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <menuitem id="menu_library_base_root"
+                  name="Library Management System"
+                  sequence="0"
+        />
+     <!-- book menu in their xml -->
+     <!-- bookreservation menu in their xml -->
+     <!-- librarian menu in their xml -->
+
+</odoo>

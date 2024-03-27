@@ -3,8 +3,11 @@ SMS_base.access_school_student,access_school_student,SMS_base.model_school_stude
 SMS_base.access_school_teacher,access_school_teacher,SMS_base.model_school_teacher,base.group_user,1,1,1,1
 SMS_base.access_school_parent,access_school_parent,SMS_base.model_school_parent,base.group_user,1,1,1,1
 SMS_base.access_school_class,access_school_class,SMS_base.model_school_class,base.group_user,1,1,1,1
+SMS_base.access_school_class_line,access_school_class_line,SMS_base.model_school_class_line,base.group_user,1,1,1,1
 SMS_base.access_school_room,access_school_room,SMS_base.model_school_room,base.group_user,1,1,1,1
 SMS_base.access_school_section,access_school_section,SMS_base.model_school_section,base.group_user,1,1,1,1
 SMS_base.access_school_subject,access_school_subject,SMS_base.model_school_subject,base.group_user,1,1,1,1
 SMS_base.access_school_time_table,access_school_time_table,SMS_base.model_school_time_table,base.group_user,1,1,1,1
+SMS_base.access_school_section_line,access_school_section_line,SMS_base.model_school_section_line,base.group_user,1,1,1,1
+
 

@@ -13,7 +13,7 @@
                             <field name="subject_id"/>
                             <field name="description"/>
                             <field name="class_id" options="{'no_create': True, 'no_open': True}" widget="many2one"/>
-                            <field name="book_id" options="{'no_create': True, 'no_open': True}" widget="many2one"/>
+                            <field name="book_id"/>
                             <field name="subject_type"/>
                             <field name="active"/>
                         </group>
@@ -39,7 +39,7 @@
 
 
         <record id="action_school_subject" model="ir.actions.act_window">
-            <field name="name">Room</field>
+            <field name="name">Subject</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">school.subject</field>
             <field name="view_mode">tree,form</field>

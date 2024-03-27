@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="sequence_library_book" model="ir.sequence">
+            <field name="name">Library Book Sequence</field>
+            <field name="code">library.book.sequence</field>
+            <field name="prefix">BR</field>
+            <field name="padding">7</field> <!-- Adjust padding as needed -->
+        </record>
+    </data>
+    <data noupdate="1">
+        <record id="sequence_book_reservation" model="ir.sequence">
+            <field name="name">Library Book Reservation Sequence</field>
+            <field name="code">library.book_reservation.sequence</field>
+            <field name="prefix">RB</field>
+            <field name="padding">7</field> <!-- Adjust padding as needed -->
+        </record>
+    </data>
+</odoo>

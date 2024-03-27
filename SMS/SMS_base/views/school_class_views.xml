@@ -15,7 +15,24 @@
                             <field name="active"/>
                             <field name="admin_id"/>
                         </group>
-                    </sheet>
+                    
+
+                <!-- New Page for Class Lines -->
+                <notebook>
+                    <page string="Subject List">
+                        
+                            <field name="class_line_ids" widget="one2many">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="book_id"/>
+                                    <field name="subject_type"/>
+                                    <field name="book_image"/>
+                                </tree>
+                            </field>
+                        
+                    </page>
+                </notebook>
+                 </sheet>
                 </form>
             </field>
         </record>
@@ -38,7 +55,7 @@
 
 
         <record id="action_school_class" model="ir.actions.act_window">
-            <field name="name">Room</field>
+            <field name="name">Class</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">school.class</field>
             <field name="view_mode">tree,form</field>

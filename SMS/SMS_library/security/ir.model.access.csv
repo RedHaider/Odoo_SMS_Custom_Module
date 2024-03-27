@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+SMS_library.access_library_book,access_library_book,SMS_library.model_library_book,base.group_user,1,1,1,1
+SMS_library.access_library_librarian,access_library_librarian,SMS_library.model_library_librarian,base.group_user,1,1,1,1
+SMS_library.access_library_reservation_book,access_library_reservation_book,SMS_library.model_library_reservation_book,base.group_user,1,1,1,1
+SMS_library.access_library_book_reservation,access_library_book_reservation,SMS_library.model_library_book_reservation,base.group_user,0,0,0,0
+SMS_library.access_library_practice,access_library_practice,SMS_library.model_library_practice,base.group_user,0,0,0,0

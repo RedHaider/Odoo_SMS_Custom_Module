@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="sequence_school_student" model="ir.sequence">
+            <field name="name">School Student Sequence</field>
+            <field name="code">school.student.sequence</field>
+            <field name="prefix">ST</field>
+            <field name="padding">7</field>
+        </record>
+    </data>
+    <data noupdate="1">
+        <record id="sequence_school_teacher" model="ir.sequence">
+            <field name="name">School Teacher Sequence</field>
+            <field name="code">school.teacher.sequence</field>
+            <field name="prefix">THR</field>
+            <field name="padding">6</field>
+        </record>
+    </data>
+    <data noupdate="1">
+        <record id="sequence_parent_teacher" model="ir.sequence">
+            <field name="name">School Parent Sequence</field>
+            <field name="code">school.parent.sequence</field>
+            <field name="prefix">PRT</field>
+            <field name="padding">6</field>
+        </record>
+    </data>
+    <data noupdate="1">
+        <record id="sequence_section_teacher" model="ir.sequence">
+            <field name="name">School Section Sequence</field>
+            <field name="code">school.section.sequence</field>
+            <field name="prefix">SCN</field>
+            <field name="padding">6</field>
+        </record>
+    </data>
+    <data noupdate="1">
+        <record id="sequence_room_teacher" model="ir.sequence">
+            <field name="name">School Room Sequence</field>
+            <field name="code">school.room.sequence</field>
+            <field name="prefix">RM</field>
+            <field name="padding">3</field>
+        </record>
+    </data>
+    <data noupdate="1">
+<record id="sequence_class_teacher" model="ir.sequence">
+            <field name="name">School Class Sequence</field>
+            <field name="code">school.class.sequence</field>
+            <field name="prefix">CLS</field>
+            <field name="padding">3</field>
+        </record>
+    </data>
+    <data noupdate="1">
+        <record id="sequence_subject_teacher" model="ir.sequence">
+            <field name="name">School Subject Sequence</field>
+            <field name="code">school.subject.sequence</field>
+            <field name="prefix">SUB</field>
+            <field name="padding">3</field>
+        </record>
+    </data>
+    <data noupdate="1">
+        <record id="sequence_subject_teacher" model="ir.sequence">
+            <field name="name">School Subject Sequence</field>
+            <field name="code">school.subject.sequence</field>
+            <field name="prefix">SUB</field>
+            <field name="padding">3</field>
+        </record>
+    </data>
+    <data noupdate="1">
+        <record id="sequence_time_teacher" model="ir.sequence">
+            <field name="name">School Time Sequence</field>
+            <field name="code">school.time.sequence</field>
+            <field name="prefix">T</field>
+            <field name="padding">2</field>
+        </record>
+    </data>
+</odoo>

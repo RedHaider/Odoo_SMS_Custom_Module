@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- Form View -->
+        <record id="view_library_practice_form" model="ir.ui.view">
+            <field name="name">library.practice.form</field>
+            <field name="model">library.practice</field>
+            <field name="arch" type="xml">
+                <form string="Library Practice">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="book_pull"/>
+                            <field name="book_image" widget="image" class="oe_avatar"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- Tree View -->
+        <record id="view_library_practice_tree" model="ir.ui.view">
+            <field name="name">library.practice.tree</field>
+            <field name="model">library.practice</field>
+            <field name="arch" type="xml">
+                <tree string="Library Practice">
+                    <field name="name"/>
+                    <field name="book_pull"/>
+                    <field name="book_image" widget="image" class="oe_avatar"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="action_llibrary_practice" model="ir.actions.act_window">
+            <field name="name">Practice</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">library.practice</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smile_face">
+                    Create your book reservation!
+                </p>
+            </field>
+        </record>
+
+<menuitem id="menu_practice_main"
+          name="practice"
+          action="action_llibrary_practice"
+          parent="menu_library_base_root"
+          sequence="3"
+/>
+
+
+</odoo>
+

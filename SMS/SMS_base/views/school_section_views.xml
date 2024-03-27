@@ -16,6 +16,86 @@
                             <field name="teacher_id" options="{'no_create': True, 'no_open': True}" widget="many2one"/>
                             <field name="student_count"/>
                         </group>
+                    <!-- New Page for Section Lines -->
+                    <notebook>
+                    <!-- Sunday page -->
+                        <page string="Sunday">
+                          <field name="sunday_line_ids" widget="many2many">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="teacher_id"/>
+                                <field name="subject_id"/>
+                                <field name="time"/>
+                            </tree>
+                          </field>
+                        </page>
+                        <!-- Monday-page -->
+                        <page string="Monday">
+                          <field name="monday_line_ids" widget="many2many">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="teacher_id"/>
+                                <field name="subject_id"/>
+                                <field name="time"/>
+                            </tree>
+                          </field> 
+                        </page>
+                        <!-- Tuesday-page -->
+                        <page string="Tuesday">
+                          <field name="tuesday_line_ids" widget="many2many">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="teacher_id"/>
+                                <field name="subject_id"/>
+                                <field name="time"/>
+                            </tree>
+                          </field>
+                        </page>
+                        <!-- Wednesday-page -->
+                        <page string="Wednesday">
+                          <field name="wednesday_line_ids" widget="many2many">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="teacher_id"/>
+                                <field name="subject_id"/>
+                                <field name="time"/>
+                            </tree>
+                          </field>
+                        </page>
+                        <!-- Thursday-page -->
+                        <page string="Thursday">
+                          <field name="thursday_line_ids" widget="many2many">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="teacher_id"/>
+                                <field name="subject_id"/>
+                                <field name="time"/>
+                            </tree>
+                          </field>
+                        </page>
+                        <!-- Friday-page -->
+                        <page string="Friday">
+                          <field name="friday_line_ids" widget="many2many">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="teacher_id"/>
+                                <field name="subject_id"/>
+                                <field name="time"/>
+                            </tree>
+                          </field>
+                        </page>
+                        <!-- Saturday-page -->
+                        <page string="Saturday">
+                          <field name="saturday_line_ids" widget="many2many">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="teacher_id"/>
+                                <field name="subject_id"/>
+                                <field name="time"/>
+                            </tree>
+                          </field>
+                        </page>
+                    </notebook>
                     </sheet>
                 </form>
             </field>
@@ -40,7 +120,7 @@
 
 
         <record id="action_school_section" model="ir.actions.act_window">
-            <field name="name">Teacher</field>
+            <field name="name">Section</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">school.section</field>
             <field name="view_mode">tree,form</field>
